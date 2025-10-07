@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #f4f4f4;
+}
+
+section {
+    padding: 2rem;
+}
