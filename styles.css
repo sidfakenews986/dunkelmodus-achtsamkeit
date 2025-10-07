@@ -22,10 +22,10 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #004494; /* Darkened hover color for better visibility */
 }
 
-.dark-mode {
+dark-mode {
     background-color: #222;
     color: #f4f4f4;
 }
