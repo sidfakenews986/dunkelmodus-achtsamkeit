@@ -14,6 +14,11 @@ const loadTheme = () => {
     const darkMode = localStorage.getItem('dark-mode') === 'true';
     body.classList.toggle('dark-mode', darkMode);
     toggleButton.textContent = darkMode ? 'Wechsel zu Hellmodus' : 'Wechsel zu Dunkelmodus';
+
+    const savedBgColor = localStorage.getItem('bg-color');
+    const savedTextColor = localStorage.getItem('text-color');
+    if (savedBgColor) body.style.backgroundColor = savedBgColor;
+    if (savedTextColor) body.style.color = savedTextColor;
 };
 
 loadTheme();
