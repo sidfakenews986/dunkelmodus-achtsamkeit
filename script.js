@@ -3,13 +3,13 @@ const body = document.body;
 const bgColorInput = document.getElementById('bg-color');
 const textColorInput = document.getElementById('text-color');
 
-// Funktion zum Umschalten des Themas
+// Function to toggle the theme
 toggleButton.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     toggleButton.textContent = body.classList.contains('dark-mode') ? 'Wechsel zu Hellmodus' : 'Wechsel zu Dunkelmodus';
 });
 
-// Farben im lokalen Speicher speichern und laden
+// Save and load colors from local storage
 const loadTheme = () => {
     const darkMode = localStorage.getItem('dark-mode') === 'true';
     body.classList.toggle('dark-mode', darkMode);
@@ -23,7 +23,7 @@ const loadTheme = () => {
 
 loadTheme();
 
-// Farben anpassen und speichern
+// Adjust colors and save
 bgColorInput.addEventListener('input', (event) => {
     body.style.backgroundColor = event.target.value;
     localStorage.setItem('bg-color', event.target.value);
